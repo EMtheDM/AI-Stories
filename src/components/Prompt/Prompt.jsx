@@ -69,14 +69,14 @@ const Prompt = ({ saveResponse }) => {
           // }}
         >
           <h1>
-            AI Poetry <IoChatbubbleEllipsesOutline />
+            AI Stories <IoChatbubbleEllipsesOutline />
           </h1>
           <h2>
-            Good Morrow! Welcome to the AI Poetry site, where you can ask an AI
-            to write poetry for you!
+            Good Morrow! Welcome to the AI Stories site, where you can ask an AI
+            to write a story for you!
           </h2>
           <h3>
-            Simply tell the AI what you would like your poem to be about below:
+            Simply tell the AI what you would like your story to be about below:
           </h3>
           <FormControl>
             <TextField
@@ -85,7 +85,7 @@ const Prompt = ({ saveResponse }) => {
               }}
               margin="normal"
               type="text"
-              label="Ex: Write a poem about summer"
+              label="Ex: Write a story about love"
               multiline
               maxRows={4}
               value={prompt}
