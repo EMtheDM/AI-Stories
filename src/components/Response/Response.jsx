@@ -1,19 +1,29 @@
 import "./Response.css";
+import { Container, Box, Grid } from "@mui/material";
+
 const Response = ({ prompt, response }) => {
   return (
     <>
-      <div>
-        <div>
-          <div className="prompt-card">
-            <p>Prompt:</p>
-            <p>{prompt}</p>
-          </div>
-          <div className="response-card">
-            <p>Response:</p>
-            <p>{response}</p>
-          </div>
-        </div>
-      </div>
+      <Container className="responseCard" margin="normal">
+        <Grid
+          className="grid"
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          margin="dense"
+        >
+          <Box className="box" margin="dense">
+            <h3 className="title">Prompt:</h3>
+            <p className="input">{prompt}</p>
+          </Box>
+          <Box className="box">
+            <h3 className="title">Response:</h3>
+            <p className="input">{response}</p>
+          </Box>
+        </Grid>
+      </Container>
     </>
   );
 };

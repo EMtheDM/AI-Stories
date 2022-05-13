@@ -1,0 +1,21 @@
+.responseList {
+  margin-top: 1em;
+}
+
+.listGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.listPaper {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+}
+
+.history {
+  text-decoration: underline;
+}

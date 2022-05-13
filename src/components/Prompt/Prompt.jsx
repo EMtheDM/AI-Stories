@@ -1,16 +1,7 @@
 import "./Prompt.css";
 import { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-import {
-  Container,
-  Box,
-  Paper,
-  Grid,
-  FormControl,
-  TextField,
-  Button,
-  Input,
-} from "@mui/material";
+import { Container, Grid, FormControl, TextField } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
@@ -85,7 +76,7 @@ const Prompt = ({ saveResponse }) => {
             to write poetry for you!
           </h2>
           <h3>
-            Simply tell the AI what you would like your poem to be about below
+            Simply tell the AI what you would like your poem to be about below:
           </h3>
           <FormControl>
             <TextField
@@ -94,7 +85,7 @@ const Prompt = ({ saveResponse }) => {
               }}
               margin="normal"
               type="text"
-              label="Ex: Write me a poem about summer"
+              label="Ex: Write a poem about summer"
               multiline
               maxRows={4}
               value={prompt}
@@ -105,6 +96,7 @@ const Prompt = ({ saveResponse }) => {
             {!isLoading && (
               <LoadingButton
                 variant="outlined"
+                color="primary"
                 onClick={handleSubmit}
                 sx={{ width: 600, height: 60 }}
                 direction="column"
@@ -118,6 +110,7 @@ const Prompt = ({ saveResponse }) => {
               <LoadingButton
                 loading
                 variant="outlined"
+                color="primary"
                 onClick={handleSubmit}
                 sx={{ width: 600, height: 60 }}
                 direction="column"
