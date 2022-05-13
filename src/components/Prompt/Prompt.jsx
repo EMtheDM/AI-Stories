@@ -38,4 +38,12 @@ const Prompt = ({ saveResponse }) => {
       console.error(err);
     }
   };
+
+  //   What happens when Submit button is clicked
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsLoading(true);
+    getResponse();
+    setPrompt("");
+  };
 };
