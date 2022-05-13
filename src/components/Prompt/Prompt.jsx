@@ -72,9 +72,9 @@ const Prompt = ({ saveResponse }) => {
           direction="column"
           alignItems="center"
           justifyContent="start"
-          style={{
-            minHeight: "100vh",
-          }}
+          // style={{
+          //   minHeight: "100vh",
+          // }}
         >
           <h1>AI Poetry</h1>
           <FormControl>
