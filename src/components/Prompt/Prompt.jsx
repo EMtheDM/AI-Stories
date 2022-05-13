@@ -51,4 +51,26 @@ const Prompt = ({ saveResponse }) => {
   const handleChange = (input) => {
     setPrompt(input);
   };
+
+  return (
+    <>
+      <div>
+        <h1>AI Poetry</h1>
+        <form>
+          <input
+            type="text"
+            value={prompt}
+            onChange={({ target }) => handleChange(target.value)}
+            placeholder="Write poetry here!"
+          />
+          {!isLoading && <button onClick={handleSubmit}>Submit</button>}
+          {isLoading && (
+            <button onClick={handleSubmit}>Writing Poetry...</button>
+          )}
+        </form>
+      </div>
+    </>
+  );
 };
+
+export default Prompt;
