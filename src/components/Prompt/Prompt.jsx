@@ -1,6 +1,17 @@
 import "./Prompt.css";
 import { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
+import {
+  Container,
+  Box,
+  Paper,
+  Grid,
+  FormControl,
+  TextField,
+  Button,
+  Input,
+} from "@mui/material";
+import { LoadingButton } from "@mui/lab";
 
 // Create API Configuration using API key
 const configuration = new Configuration({
@@ -54,21 +65,45 @@ const Prompt = ({ saveResponse }) => {
 
   return (
     <>
-      <div>
-        <h1>AI Poetry</h1>
-        <form>
-          <input
-            type="text"
-            value={prompt}
-            onChange={({ target }) => handleChange(target.value)}
-            placeholder="Write poetry here!"
-          />
-          {!isLoading && <button onClick={handleSubmit}>Submit</button>}
-          {isLoading && (
-            <button onClick={handleSubmit}>Writing Poetry...</button>
-          )}
-        </form>
-      </div>
+      <Container maxWidth="xl">
+        <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="start"
+          style={{
+            minHeight: "100vh",
+          }}
+        >
+          <h1>AI Poetry</h1>
+          <FormControl>
+            <TextField
+              sx={{
+                width: 1000,
+              }}
+              margin="normal"
+              type="text"
+              label="Write poetry here!"
+              multiline
+              maxRows={4}
+              value={prompt}
+              onChange={({ target }) => handleChange(target.value)}
+              id="fullWidth"
+            />
+            {!isLoading && (
+              <LoadingButton variant="outlined" onClick={handleSubmit}>
+                Submit
+              </LoadingButton>
+            )}
+            {isLoading && (
+              <LoadingButton loading variant="outlined" onClick={handleSubmit}>
+                Writing Poetry...
+              </LoadingButton>
+            )}
+          </FormControl>
+        </Grid>
+      </Container>
     </>
   );
 };

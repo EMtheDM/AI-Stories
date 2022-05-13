@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Prompt saveResponse={saveResponse} />
-      <ResponseList responseHistory={responseHistory} />
+      {/* <ResponseList responseHistory={responseHistory} /> */}
     </div>
   );
 }
