@@ -46,4 +46,9 @@ const Prompt = ({ saveResponse }) => {
     getResponse();
     setPrompt("");
   };
+
+  //   handleChange function
+  const handleChange = (input) => {
+    setPrompt(input);
+  };
 };
