@@ -12,6 +12,7 @@ import {
   Input,
 } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 // Create API Configuration using API key
 const configuration = new Configuration({
@@ -76,29 +77,54 @@ const Prompt = ({ saveResponse }) => {
           //   minHeight: "100vh",
           // }}
         >
-          <h1>AI Poetry</h1>
+          <h1>
+            AI Poetry <IoChatbubbleEllipsesOutline />
+          </h1>
+          <h2>
+            Good Morrow! Welcome to the AI Poetry site, where you can ask an AI
+            to write poetry for you!
+          </h2>
+          <h3>
+            Simply tell the AI what you would like your poem to be about below
+          </h3>
           <FormControl>
             <TextField
               sx={{
-                width: 1000,
+                width: 600,
               }}
               margin="normal"
               type="text"
-              label="Write poetry here!"
+              label="Ex: Write me a poem about summer"
               multiline
               maxRows={4}
               value={prompt}
               onChange={({ target }) => handleChange(target.value)}
               id="fullWidth"
+              className="input"
             />
             {!isLoading && (
-              <LoadingButton variant="outlined" onClick={handleSubmit}>
+              <LoadingButton
+                variant="outlined"
+                onClick={handleSubmit}
+                sx={{ width: 600, height: 60 }}
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
                 Submit
               </LoadingButton>
             )}
             {isLoading && (
-              <LoadingButton loading variant="outlined" onClick={handleSubmit}>
-                Writing Poetry...
+              <LoadingButton
+                loading
+                variant="outlined"
+                onClick={handleSubmit}
+                sx={{ width: 600, height: 60 }}
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
+                Loading...
               </LoadingButton>
             )}
           </FormControl>
