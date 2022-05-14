@@ -20,7 +20,7 @@ const Prompt = ({ saveResponse }) => {
       openai
         .createCompletion("text-curie-001", {
           prompt: prompt,
-          max_tokens: 100,
+          max_tokens: 1000,
           temperature: 1,
           top_p: 1,
           echo: true,
