@@ -1,7 +1,6 @@
 {
   "name": "ai-poetry",
   "version": "0.1.0",
-  "homepage": "https://emthedm.github.io/AI-Stories/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
