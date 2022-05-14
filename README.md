@@ -120,7 +120,7 @@ git push origin yourname-branch
 
 ## Links
 
-Deployed Heroku Site:
+Deployed Site: https://emthedm.github.io/AI-Stories/
 
 Github Site: https://github.com/emthedm/ai-stories
 
