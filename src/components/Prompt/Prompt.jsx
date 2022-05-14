@@ -9,6 +9,7 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY,
 });
+// how to get this pushed without showing key
 
 const openai = new OpenAIApi(configuration);
 const Prompt = ({ saveResponse }) => {
