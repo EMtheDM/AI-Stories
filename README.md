@@ -120,7 +120,7 @@ git push origin yourname-branch
 
 ## Links
 
-Deployed Site: https://emthedm.github.io/AI-Stories/
+Deployed Site: https://ai-stories.netlify.app/
 
 Github Site: https://github.com/emthedm/ai-stories
 
