@@ -2,7 +2,7 @@ import "./ResponseList.css";
 import Response from "../Response/Response";
 import { Paper, Grid, ListItem } from "@mui/material";
 
-const ResponseList = ({ responseHistory }) => {
+const ResponseList = ({ responseHistory, deleteResponse }) => {
   return (
     <Grid
       className="listGrid"
@@ -20,6 +20,8 @@ const ResponseList = ({ responseHistory }) => {
                 prompt={response.prompt}
                 response={response.response}
                 key={response.date}
+                date={response.date}
+                deleteResponse={deleteResponse}
               />
             </Paper>
           </ListItem>

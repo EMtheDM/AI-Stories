@@ -14,6 +14,18 @@ function App() {
     setResponseHistory([newResponse, ...responseHistory]);
   };
 
+  const deleteResponse = (id) => {
+    if (
+      window.confirm(
+        `Are you sure you want to delete response? This cannot be undone!`
+      )
+    ) {
+      setResponseHistory(
+        responseHistory.filter((response) => response.date !== id)
+      );
+    }
+  };
+
   useEffect(() => {
     localStorage.setItem("responses", JSON.stringify(responseHistory));
   }, [responseHistory]);
@@ -21,7 +33,10 @@ function App() {
   return (
     <div className="App">
       <Prompt saveResponse={saveResponse} />
-      <ResponseList responseHistory={responseHistory} />
+      <ResponseList
+        responseHistory={responseHistory}
+        deleteResponse={deleteResponse}
+      />
     </div>
   );
 }

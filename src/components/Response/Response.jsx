@@ -1,7 +1,8 @@
 import "./Response.css";
-import { Container, Box, Grid } from "@mui/material";
+import { Container, Box, Grid, IconButton } from "@mui/material";
+import { IoClose } from "react-icons/io5";
 
-const Response = ({ prompt, response }) => {
+const Response = ({ prompt, response, date, deleteResponse }) => {
   return (
     <>
       <Container className="responseCard" margin="normal">
@@ -14,6 +15,17 @@ const Response = ({ prompt, response }) => {
           justifyContent="center"
           margin="dense"
         >
+          <Grid container spacing={0} justifyContent="flex-end">
+            <IconButton
+              className="closeBtn"
+              color="error"
+              fontSize="inherit"
+              size="large"
+              onClick={() => deleteResponse(date)}
+            >
+              <IoClose />
+            </IconButton>
+          </Grid>
           <Box className="box" margin="dense">
             <h3 className="title">Prompt:</h3>
             <p className="input">{prompt}</p>

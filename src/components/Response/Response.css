@@ -25,3 +25,9 @@
 .box {
   background-color: white;
 }
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
