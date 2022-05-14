@@ -19,11 +19,10 @@ An app that sends plain text prompts to the OpenAI API and displays the results 
 7. [ Collaborators ](#collabsection)
 8. [ Screenshots ](#picsection)
 9. [ Links ](#linksection)
-10. [ Resources/Credit ](#creditsection)
 
 <a name="usersection"></a>
 
-## User Story
+## User Story:
 
 ```
 AS A user,
@@ -33,7 +32,7 @@ SO THAT I can enjoy results from OpenAI
 
 <a name="acceptancesection"></a>
 
-## Acceptance Criteria
+## Acceptance Criteria:
 
 ```
 Given an unauthenticated user
@@ -49,7 +48,7 @@ THEN I am able to see the prompts and responses from my machine sorted newest to
 
 <a name="installsection"></a>
 
-## Installation
+## Installation:
 
 - Clone the repository using:
 
@@ -72,18 +71,33 @@ npm run start
 
 <a name="licensesection"></a>
 
-## License
+## License:
 
-Copyright <2022>
+MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Copyright (c) 2022 Eric Martin
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 <a name="contribsection"></a>
 
-## Contributing
+## Contributing:
 
 1. [Fork the repo!](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. Create a feature branch:
@@ -108,22 +122,21 @@ git push origin yourname-branch
 
 <a name="collabsection"></a>
 
-## Collaborators
+## Collaborators:
 
 - Eric Martin: <a href="https://github.com/EMtheDM" target="_blank" alt="Github Page"><img src="https://img.shields.io/badge/-GitHub-708090?logo=GitHub"></a>
 
 <a name="picsection"></a>
 
-## Screenshots
+## Screenshots:
 
+![Screenshot 1](images/Screenshot-1.png)
+
+![Screenshot 2](images/Screenshot-2.png)
 <a name="linksection"></a>
 
-## Links
+## Links:
 
 Deployed Site: https://ai-stories.netlify.app/
 
 Github Site: https://github.com/emthedm/ai-stories
-
-<a name="creditsection"></a>
-
-## Resources/Credit
